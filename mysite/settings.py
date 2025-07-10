@@ -15,7 +15,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 if os.getenv('DJANGO_ENV') == 'production':
-    load_dotenv('.env.prod')
+    load_dotenv('.env.product')
 else:
     load_dotenv('.env.local')
 

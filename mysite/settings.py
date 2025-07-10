@@ -148,6 +148,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # 这里的路径应与 Ngi
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+SESSION_COOKIE_SECURE = True   # For HTTPS
+CSRF_COOKIE_SECURE = True       # For HTTPS
+
+# Add your domain(s) - include port if non-standard
+CSRF_TRUSTED_ORIGINS = [
+    '*'  # For development
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10

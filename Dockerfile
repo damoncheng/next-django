@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install requirement.txt
+RUN pip install -r requirement.txt
 
 ENV DJANGO_ENV='production'
 

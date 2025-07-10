@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-ENV PATH="/app/venv/bin:$PATH"
+RUN pip install requirement.txt
 
 ENV DJANGO_ENV='production'
 

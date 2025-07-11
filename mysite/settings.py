@@ -153,7 +153,7 @@ CSRF_COOKIE_SECURE = True       # For HTTPS
 
 # Add your domain(s) - include port if non-standard
 CSRF_TRUSTED_ORIGINS = [
-    '*'  # For development
+    'https://damoncheng.zelixir.com'  # For development
 ]
 
 REST_FRAMEWORK = {

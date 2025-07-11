@@ -1,0 +1,38 @@
+# Django 核心忽略项
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media/
+/staticfiles/
+/collected_static/
+
+# 开发环境忽略项
+.env
+.envrc
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# 缓存和临时文件
+*.swp
+*.swo
+*~
+.cache/
+.DS_Store
+.idea/
+.vscode/
+
+# 文档构建
+/docs/_build/
+/build/
+/dist/
+*.egg-info/
+.eggs/
